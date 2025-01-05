@@ -1,6 +1,6 @@
+
 import sys
 from zip_cracker import ZipCracker
-
 def main():
     if len(sys.argv) != 2:
         print("Utilizare: python main.py <cale_catre_arhiva_zip>")
@@ -15,6 +15,5 @@ def main():
         print(f"Parola gasita: {password}")
     else:
         print("Parola nu a fost gasita.")
-
 if __name__ == "__main__":
     main()
