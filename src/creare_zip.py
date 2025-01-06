@@ -35,7 +35,7 @@ def create_test_zip(zip_path, password, file_to_add='test.txt'):
         return True
 
 def manual_check(zip_path, password):
-    
+
     #  Verifică manual dacă parola funcționează corect prin extragerea arhivei
 
     system = platform.system()
@@ -62,10 +62,10 @@ def manual_check(zip_path, password):
 
 if __name__ == "__main__":
     # Creează arhiva ZIP cu parola "ab"
-    success = create_test_zip('test.zip', 'ab')
+    success = create_test_zip('test.zip', 'b2')
 
     if success:
         # Verifică manual extragerea arhivei
-        manual_check('test.zip', 'ab')
+        manual_check('test.zip', 'b2')
     else:
         print("Crearea arhivei ZIP a eșuat. Nu se poate efectua verificarea manuală.")
